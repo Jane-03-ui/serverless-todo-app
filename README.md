@@ -117,8 +117,8 @@ GET  https://your-api-id.execute-api.ap-south-1.amazonaws.com/dev/tasks
 
 ## 🙌 Author
 
-Made with ❤️ by Janani (Jane)  
-📧 Contact: your-email@example.com
+Made by Janani
+📧 Contact: jananijane03@gmail.com
 
 ---
 
