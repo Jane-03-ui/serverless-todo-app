@@ -1,0 +1,28 @@
+service: serverless-todo-app
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-south-1
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:*
+      Resource: "*"
+
+functions:
+  createTask:
+    handler: lambdas/createTask.handler
+    events:
+      - http:
+          path: tasks
+          method: post
+          cors: true
+
+  getTasks:
+    handler: lambdas/getTasks.handler
+    events:
+      - http:
+          path: tasks
+          method: get
+          cors: true
